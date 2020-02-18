@@ -12,3 +12,5 @@ git push -u origin master
 git remote add origin https://github.com/DasBalvinderDas/Notes-For-Quick-Ref.git
 git push -u origin master
 
+git config --global core.editor "mate -w"
+git config --global -e
