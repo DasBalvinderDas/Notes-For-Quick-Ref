@@ -14,3 +14,6 @@ git push -u origin master
 
 git config --global core.editor "mate -w"
 git config --global -e
+
+
+Git ls-files ->to see all the file tracked by git.
