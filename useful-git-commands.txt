@@ -18,3 +18,46 @@ git config --global -e
 
 to see all the file tracked by git.
 git ls-files 
+
+git rm --cached <filename> - to unstage a file
+
+rm -rf <folder name/filename> - to remove a file or folder
+
+git rm --cached -r CoreJava/.idea  ->To unstage files under a particular folder recursively.
+
+Adding all files under a particular directory
+git add --all CoreJava/src
+
+
+------------ Git Labs -----------------
+
+Command line instructions
+You can also upload existing files from your computer using the instructions below.
+
+
+Git global setup
+git config --global user.name "Das Balvinder Das"
+git config --global user.email "balvinder.das@gmail.com"
+
+Create a new repository
+git clone https://gitlab.com/DasBalvinderDas/car-assembly-line.git
+cd car-assembly-line
+touch README.md
+git add README.md
+git commit -m "add README"
+git push -u origin master
+
+Push an existing folder
+cd existing_folder
+git init
+git remote add origin https://gitlab.com/DasBalvinderDas/car-assembly-line.git
+git add .
+git commit -m "Initial commit"
+git push -u origin master
+
+Push an existing Git repository
+cd existing_repo
+git remote rename origin old-origin
+git remote add origin https://gitlab.com/DasBalvinderDas/car-assembly-line.git
+git push -u origin --all
+git push -u origin --tags
